@@ -16,7 +16,7 @@ import webbrowser
 from datetime import datetime
 
 # ── Configuration ──────────────────────────────────────────────────────────────
-DEXSCREENER_API = "https://api.dexscreener.com/latest/dex/search?q={}"
+DEXSCREENER_API = "https://api.dexscreener.com/latest/dex/tokens/{}"
 DARK_BG = "#1a1a2e"
 DARK_SECONDARY = "#16213e"
 DARK_CARD = "#0f3460"
@@ -716,7 +716,7 @@ class SolanaTokenChecker:
         try:
             # DexScreener doesn't have a dedicated trending endpoint,
             # so we search for common pairs or use tokens sorted by volume
-            url = "https://api.dexscreener.com/latest/dex/search?q=solana"
+            url = "https://api.dexscreener.com/latest/dex/tokens/solana"
             req = urllib.request.Request(url, headers={
                 "User-Agent": "SolanaTokenChecker/1.0",
                 "Accept": "application/json"
@@ -729,7 +729,7 @@ class SolanaTokenChecker:
 
             if len(sol_pairs) < 5:
                 # Try a broader search
-                url2 = "https://api.dexscreener.com/latest/dex/search?q=SOL"
+                url2 = "https://api.dexscreener.com/latest/dex/tokens/SOL"
                 req2 = urllib.request.Request(url2, headers={
                     "User-Agent": "SolanaTokenChecker/1.0",
                     "Accept": "application/json"
