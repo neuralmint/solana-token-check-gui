@@ -1,40 +1,48 @@
-# Solana Token Checker GUI
+<h1 align="center">🪙 Solana Token Checker GUI</h1>
+<p align="center">
+  <b>Desktop GUI for analyzing Solana tokens — built with Python Tkinter</b>
+</p>
 
-A desktop GUI application for checking Solana token data via the DexScreener API.
+<p align="center">
+  <img src="screenshot.png" alt="Solana Token Checker GUI Screenshot" width="500">
+</p>
 
-Built with **pure Python + tkinter/ttk** — no external dependencies required.
+<p align="center">
+  <img src="https://img.shields.io/badge/python-3.6+-blue.svg">
+  <img src="https://img.shields.io/badge/dependencies-tkinter-yellow.svg">
+  <img src="https://img.shields.io/badge/license-MIT-green.svg">
+</p>
 
-![Screenshot](screenshot.png)
+---
 
 ## Features
 
-- 🔍 **Check Token** — Enter any Solana token address and get detailed information
-- 🔥 **Trending** — View top Solana tokens sorted by 24h volume
-- 🛡️ **Risk Assessment** — Color-coded risk scores (green/yellow/orange/red)
-- 💰 **Token Details** — Price, liquidity, 24h volume, FDV, market cap
-- 📊 **Transaction Data** — 5m, 1h, 24h buy/sell counts
-- 🌙 **Dark Theme** — Clean, modern dark UI
-- 🖱️ **Clickable Rows** — Click any trending token to instantly check it
+- 🔍 **Check any Solana token** — enter an address or symbol
+- 📊 **Real-time data** — price, liquidity, volume, FDV from DexScreener
+- 🎯 **Risk scoring** — color-coded risk analysis (low → critical)
+- 🔥 **Trending tokens** — see what's hot right now
+- 🎨 **Dark theme** — modern UI with ttk
+- ⌨️ **Keyboard shortcuts** — Enter to check, Ctrl+C to clear
 
-## Requirements
-
-- Python 3.12+
-- Python Tkinter (`python3-tk` on Debian/Ubuntu)
-
-## Quick Start
+## Install
 
 ```bash
-# Install python3-tk (if needed)
-sudo apt install python3-tk
-
-# Run
+# Requires Python 3 and tkinter
+git clone https://github.com/neuralmint/solana-token-check-gui
+cd solana-token-check-gui
 python3 app.py
 ```
 
-## API
+## Usage
 
-Uses [DexScreener API](https://docs.dexscreener.com/api/reference) for on-chain token data.
+1. Enter a Solana token address or symbol
+2. Click **Check Token** (or press Enter)
+3. View the risk analysis results
+4. Click **Trending** to see top tokens
 
-## License
+**Note:** Requires a display server (X11 on Linux, or Xvfb for headless).
 
-MIT
+---
+
+<p align="center"><i>Built by neuralmint · Not financial advice · DYOR</i></p>
+<p align="center"><b>Donations:</b> <code>bc1q6ud0w3036ye2vfzkftwywarqswqu3jehs4nqe7</code> (BTC)</p>

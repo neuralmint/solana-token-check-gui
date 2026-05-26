@@ -16,7 +16,7 @@ import webbrowser
 from datetime import datetime
 
 # ── Configuration ──────────────────────────────────────────────────────────────
-DEXSCREENER_API = "https://api.dexscreener.com/latest/dex/token/{}"
+DEXSCREENER_API = "https://api.dexscreener.com/latest/dex/search?q={}"
 DARK_BG = "#1a1a2e"
 DARK_SECONDARY = "#16213e"
 DARK_CARD = "#0f3460"
